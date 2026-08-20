@@ -1,0 +1,33 @@
+[
+  {
+    "id": "completed_profit_by_category",
+    "question": "Which categories generated the highest completed-order profit in 2025?",
+    "required_terms": ["orders", "products", "completed", "2025"],
+    "expected_columns_any": ["category", "profit"]
+  },
+  {
+    "id": "monthly_revenue",
+    "question": "Show monthly completed revenue in 2025.",
+    "required_terms": ["orders", "completed", "2025", "group by"],
+    "expected_columns_any": ["month", "revenue"]
+  },
+  {
+    "id": "segment_aov",
+    "question": "Which customer segment has the highest average completed order value?",
+    "required_terms": ["orders", "customers", "segment", "completed"],
+    "expected_columns_any": ["segment", "average"]
+  },
+  {
+    "id": "return_rate_region",
+    "question": "Compare return rate by customer region.",
+    "required_terms": ["orders", "customers", "region", "returned"],
+    "expected_columns_any": ["region", "return"]
+  },
+  {
+    "id": "discount_margin",
+    "question": "How does discount level affect completed-order profit margin?",
+    "required_terms": ["orders", "discount", "completed"],
+    "expected_columns_any": ["discount", "margin", "profit"]
+  }
+]
+

@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "datapilot-agent"
+version = "0.1.0"
+description = "A safe, evaluated agentic data analyst for CSV and Parquet datasets"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "duckdb>=1.2.0",
+  "openai>=2.0.0",
+  "pandas>=2.2.0",
+  "pydantic>=2.10.0",
+  "python-dotenv>=1.0.1",
+  "sqlglot>=27.0.0",
+  "streamlit>=1.45.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3.0",
+  "ruff>=0.11.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+ignore = ["BLE001"]
