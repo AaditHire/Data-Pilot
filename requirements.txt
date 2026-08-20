@@ -1,0 +1,8 @@
+duckdb>=1.2.0
+openai>=2.0.0
+pandas>=2.2.0
+pyarrow>=17.0.0
+pydantic>=2.10.0
+python-dotenv>=1.0.1
+sqlglot>=27.0.0
+streamlit==1.62.0
