@@ -58,8 +58,8 @@ flowchart LR
 ### Installation
 
 ```powershell
-git clone https://github.com/AaditHire/datapilot-agentic-data-analyst.git
-cd datapilot-agentic-data-analyst
+git clone https://github.com/AaditHire/Data-Pilot.git
+cd Data-Pilot
 python -m venv .venv
 .venv\Scripts\Activate.ps1
 pip install -e ".[dev]"
@@ -149,3 +149,4 @@ tests/                         Deterministic unit tests
 - Add explicit follow-up-question memory.
 - Expand the benchmark with ambiguous and adversarial questions.
 - Containerize and deploy the application.
+
