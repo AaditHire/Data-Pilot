@@ -137,15 +137,3 @@ evals/                         End-to-end benchmark cases
 tests/                         Deterministic unit tests
 ```
 
-## Resume bullet
-
-> Built an agentic data analyst using Python, Groq, DuckDB, SQLGlot, Streamlit, and Pydantic that plans business analyses, generates and repairs read-only SQL, validates chart recommendations, and produces evidence-backed visualizations across uploaded CSV and Parquet datasets.
-
-## Roadmap
-
-- Add PostgreSQL and dbt semantic-layer connectors.
-- Add query-cost estimation and per-session token budgets.
-- Export analysis results and charts.
-- Add explicit follow-up-question memory.
-- Expand the benchmark with ambiguous and adversarial questions.
-- Containerize and deploy the application.
